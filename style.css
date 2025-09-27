@@ -5,7 +5,7 @@ body{
   background:#bfbfbf;
 }
 
-/* «лист» по центру */
+
 .page{
   width:85%;
   margin:3rem auto;
@@ -14,16 +14,16 @@ body{
   outline:12px solid #eaeaea;
   display:flex;
   flex-direction:column;
-  gap:0;                    /* без відступів між секціями */
+  gap:0;                   
 }
 
-/* усі внутрішні секції робимо 75% і центруємо */
+
 .topbar, .row, .gallery{
   width:75%;
   margin:0 auto;
 }
 
-/* верхня синя смуга */
+
 .topbar{
   min-height:80px;
   background:#69a6da;
@@ -34,13 +34,13 @@ body{
   font-weight:700;
 }
 
-/* дві колонки */
+
 .row{
   display:flex;
-  gap:0;                    /* без зазору */
+  gap:0;                  
 }
 .left{
-  flex:0 0 75%;             /* 52% + 23% = 75% ширини контейнера */
+  flex:0 0 75%;            
   min-height:260px;
   background:#c3e691;
   display:flex; align-items:center; justify-content:center;
@@ -54,7 +54,7 @@ body{
   color:#223018; font-weight:800;
 }
 
-/* нижній рожевий блок */
+
 .gallery{
   min-height:220px;
   background:#f4b5ee;
@@ -62,10 +62,11 @@ body{
   font-weight:800; color:#3a1d34;
 }
 
-/* адаптивність */
+
 @media (max-width:700px){
   .page{ width:94%; padding:3%; }
   .topbar, .row, .gallery{ width:100%; }
   .row{ flex-direction:column; }
   .left, .aside{ flex:0 0 100%; min-height:120px; }
 }
+
